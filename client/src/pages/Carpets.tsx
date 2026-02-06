@@ -1,9 +1,9 @@
 /*
  * Design: "Gentleman's Club" British Heritage Luxury
- * Carpets page: Hero, info sections, supplier mentions, CTA
+ * Carpets page: Hero, info sections, manufacturer samples in cards, CTA
  */
 import { Link } from "wouter";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, ExternalLink } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import AnimatedSection from "@/components/AnimatedSection";
 
@@ -16,6 +16,139 @@ const benefits = [
   "Stain-resistant and hard-wearing options available",
   "Free measuring service included",
   "Samples brought to your home on request",
+];
+
+interface CarpetRange {
+  name: string;
+  brand: string;
+  description: string;
+  features: string[];
+  image: string;
+  link: string;
+}
+
+const carpetRanges: CarpetRange[] = [
+  // Associated Weavers
+  {
+    name: "Invictus®",
+    brand: "Associated Weavers",
+    description: "The ultimate reference in the UK for comfy, invincible dense pile carpet. Invictus® delivers stunningly rich textures with superior stain resistance for busy family homes.",
+    features: ["Invincible Comfort", "Rich Textures", "Stain Resistant"],
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    link: "https://associated-weavers.co.uk/",
+  },
+  {
+    name: "Sedna®",
+    brand: "Associated Weavers",
+    description: "Soft, luxurious and durable carpet made from recycled waste material and PET bottles. Sedna® combines sustainability with premium quality for eco-conscious homeowners.",
+    features: ["Soft & Luxurious", "Sustainable", "Recycled Materials"],
+    image: "https://images.unsplash.com/photo-1615529162924-f8605388461d?w=600&h=400&fit=crop",
+    link: "https://associated-weavers.co.uk/",
+  },
+  {
+    name: "iSENSE®",
+    brand: "Associated Weavers",
+    description: "The UK's first and favourite brand for super soft carpet. iSENSE® is ultra resilient and extremely durable — the luxury choice for discerning homeowners.",
+    features: ["Super Soft", "Ultra Resilient", "Extremely Durable"],
+    image: "https://images.unsplash.com/photo-1600166898405-da9535204843?w=600&h=400&fit=crop",
+    link: "https://associated-weavers.co.uk/",
+  },
+  {
+    name: "Gaia®",
+    brand: "Associated Weavers",
+    description: "The ultimate contemporary choice — a global decorating solution that's soft, colourfast and comfortable with brilliant colours and a silky touch.",
+    features: ["Brilliant Colours", "Silky Touch", "Easy Maintenance"],
+    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=400&fit=crop",
+    link: "https://associated-weavers.co.uk/",
+  },
+  {
+    name: "Vivendi®",
+    brand: "Associated Weavers",
+    description: "Bleach cleanable, incredibly resilient, superbly wear-resistant and yet pleasantly soft. Vivendi® is built to bounce back and made to last.",
+    features: ["Bleach Cleanable", "Wear Resistant", "Pleasantly Soft"],
+    image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&h=400&fit=crop",
+    link: "https://associated-weavers.co.uk/",
+  },
+  // Cormar
+  {
+    name: "Easy Clean Range",
+    brand: "Cormar Carpets",
+    description: "Stain resistant, pet and family-friendly carpets perfect for all around the home. All Easy Clean ranges come with a 10 Year Stain and Wear Guarantee for complete peace of mind.",
+    features: ["Stain Resistant", "Pet Friendly", "10 Year Guarantee"],
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop",
+    link: "https://www.cormarcarpets.co.uk/",
+  },
+  {
+    name: "Soft Deep Pile",
+    brand: "Cormar Carpets",
+    description: "Cosy, luxurious and soft to the touch. Made from 100% Luxelle Polypropylene, these super-soft carpets help you create the ultimate haven with a 10-year stain warranty.",
+    features: ["100% Luxelle", "Luxuriously Soft", "10 Year Warranty"],
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=400&fit=crop",
+    link: "https://www.cormarcarpets.co.uk/",
+  },
+  {
+    name: "Wool Twist",
+    brand: "Cormar Carpets",
+    description: "Natural, versatile and ideal for all around the home. Available in heather, flecked or plain shades and in a variety of pile weights to suit your needs.",
+    features: ["Natural Wool", "Versatile", "Multiple Weights"],
+    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop",
+    link: "https://www.cormarcarpets.co.uk/",
+  },
+  {
+    name: "Wool Loop",
+    brand: "Cormar Carpets",
+    description: "Naturally textured and resilient with a quality feel. The Wool Loop collection includes a variety of individual styles from striped to natural seagrass looks.",
+    features: ["Textured", "Resilient", "Quality Feel"],
+    image: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&h=400&fit=crop",
+    link: "https://www.cormarcarpets.co.uk/",
+  },
+  // Westex
+  {
+    name: "Silken Velvet",
+    brand: "Westex Flooring",
+    description: "For an unrivalled luxury finish, the Silken Velvet collection guarantees irresistible comfort and a lustrous appearance that transforms any room.",
+    features: ["Luxury Finish", "Lustrous", "Irresistible Comfort"],
+    image: "https://images.unsplash.com/photo-1616137466211-f939a420be84?w=600&h=400&fit=crop",
+    link: "https://www.westexflooring.com/",
+  },
+  {
+    name: "Ultima Twist",
+    brand: "Westex Flooring",
+    description: "The ideal choice for residential or contract carpeted areas, offering a superb combination of performance and style with exceptional durability.",
+    features: ["High Performance", "Durable", "Versatile"],
+    image: "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=600&h=400&fit=crop",
+    link: "https://www.westexflooring.com/",
+  },
+  {
+    name: "Westend Velvet",
+    brand: "Westex Flooring",
+    description: "For richness, comfort and style, the Westend Velvet collection is hard to beat — tasteful good looks and a sumptuous feel that elevates any interior.",
+    features: ["Rich & Comfortable", "Tasteful Design", "Sumptuous Feel"],
+    image: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=600&h=400&fit=crop",
+    link: "https://www.westexflooring.com/",
+  },
+];
+
+// Group ranges by brand
+const brandGroups = [
+  {
+    brand: "Associated Weavers",
+    logo: null,
+    website: "https://associated-weavers.co.uk/",
+    ranges: carpetRanges.filter((r) => r.brand === "Associated Weavers"),
+  },
+  {
+    brand: "Cormar Carpets",
+    logo: null,
+    website: "https://www.cormarcarpets.co.uk/",
+    ranges: carpetRanges.filter((r) => r.brand === "Cormar Carpets"),
+  },
+  {
+    brand: "Westex Flooring",
+    logo: null,
+    website: "https://www.westexflooring.com/",
+    ranges: carpetRanges.filter((r) => r.brand === "Westex Flooring"),
+  },
 ];
 
 export default function Carpets() {
@@ -45,14 +178,14 @@ export default function Carpets() {
               </p>
               <p className="mt-6 text-charcoal/70 text-lg leading-relaxed">
                 We stock some of the finest carpets from the best suppliers in the UK, including
-                <strong className="text-charcoal"> Associated Weavers</strong> and
-                <strong className="text-charcoal"> Cormar Carpets</strong>. Choosing the right carpet
-                with Usher Flooring couldn't be easier.
+                <strong className="text-charcoal"> Associated Weavers</strong>,
+                <strong className="text-charcoal"> Cormar Carpets</strong> and
+                <strong className="text-charcoal"> Westex Flooring</strong>, plus many more.
+                Contact us for a no-obligation quote and we can provide samples on visit too.
               </p>
               <p className="mt-6 text-charcoal/70 text-lg leading-relaxed">
-                As an independent fitter, we offer a free measuring service in Surrey and surrounding
-                areas and can provide you with a no-obligation quote for supplying and fitting your new
-                carpets.
+                As an independent fitter, we offer a free measuring service and can provide you with
+                a no-obligation quote for supplying and fitting your new carpets.
               </p>
             </AnimatedSection>
 
@@ -76,11 +209,89 @@ export default function Carpets() {
         </div>
       </section>
 
-      {/* Rooms Section — dark */}
-      <section className="py-20 md:py-28 bg-background">
+      {/* Carpet Samples by Manufacturer */}
+      {brandGroups.map((group, groupIdx) => (
+        <section
+          key={group.brand}
+          className={`py-20 md:py-28 ${groupIdx % 2 === 0 ? "bg-background" : ""}`}
+          style={groupIdx % 2 !== 0 ? { background: "#1A1A1C" } : undefined}
+        >
+          <div className="container">
+            <AnimatedSection className="mb-14">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                  <p className="text-gold text-sm font-semibold uppercase tracking-[0.2em] mb-2">
+                    Our Supplier
+                  </p>
+                  <h2 className="section-heading text-3xl md:text-4xl text-warm-cream">
+                    {group.brand}
+                  </h2>
+                  <div className="gold-divider mt-4" />
+                </div>
+                <a
+                  href={group.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gold/80 hover:text-gold text-sm font-medium tracking-wide transition-colors duration-300"
+                >
+                  Visit Website <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {group.ranges.map((range, i) => (
+                <AnimatedSection key={range.name} delay={i * 0.1}>
+                  <div className="group bg-charcoal border border-gold/10 overflow-hidden hover:border-gold/30 transition-all duration-500">
+                    {/* Image */}
+                    <div className="relative h-52 overflow-hidden">
+                      <img
+                        src={range.image}
+                        alt={`${range.name} carpet by ${range.brand}`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
+                      <div className="absolute bottom-4 left-4">
+                        <span className="bg-gold/90 text-charcoal text-xs font-semibold uppercase tracking-[0.15em] px-3 py-1">
+                          {range.brand}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-6">
+                      <h3 className="font-serif text-xl text-warm-cream tracking-wide">
+                        {range.name}
+                      </h3>
+                      <div className="w-8 h-0.5 bg-gold/50 mt-2 mb-4" />
+                      <p className="text-warm-cream/60 text-sm leading-relaxed mb-5">
+                        {range.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {range.features.map((feature) => (
+                          <span
+                            key={feature}
+                            className="text-xs text-gold/80 border border-gold/20 px-3 py-1 tracking-wide"
+                          >
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
+
+      {/* Rooms Section — warm cream */}
+      <section className="py-20 md:py-28" style={{ background: "#F0EBE3" }}>
         <div className="container">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="section-heading text-3xl md:text-4xl text-warm-cream">
+            <h2 className="section-heading text-3xl md:text-4xl text-charcoal">
               Carpets for Every Room
             </h2>
             <div className="gold-divider mx-auto mt-4" />
