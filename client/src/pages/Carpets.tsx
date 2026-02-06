@@ -34,7 +34,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "The ultimate reference in the UK for comfy, invincible dense pile carpet. Invictus® delivers stunningly rich textures with superior stain resistance for busy family homes.",
     features: ["Invincible Comfort", "Rich Textures", "Stain Resistant"],
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-overview-invictus.ashx?h=710&w=1000",
     link: "https://associated-weavers.co.uk/",
   },
   {
@@ -42,7 +42,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "Soft, luxurious and durable carpet made from recycled waste material and PET bottles. Sedna® combines sustainability with premium quality for eco-conscious homeowners.",
     features: ["Soft & Luxurious", "Sustainable", "Recycled Materials"],
-    image: "https://images.unsplash.com/photo-1615529162924-f8605388461d?w=600&h=400&fit=crop",
+    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-overview-sedna.ashx?h=710&w=1000",
     link: "https://associated-weavers.co.uk/",
   },
   {
@@ -50,7 +50,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "The UK's first and favourite brand for super soft carpet. iSENSE® is ultra resilient and extremely durable — the luxury choice for discerning homeowners.",
     features: ["Super Soft", "Ultra Resilient", "Extremely Durable"],
-    image: "https://images.unsplash.com/photo-1600166898405-da9535204843?w=600&h=400&fit=crop",
+    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-overview-isense.ashx?h=710&w=1000",
     link: "https://associated-weavers.co.uk/",
   },
   {
@@ -58,7 +58,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "The ultimate contemporary choice — a global decorating solution that's soft, colourfast and comfortable with brilliant colours and a silky touch.",
     features: ["Brilliant Colours", "Silky Touch", "Easy Maintenance"],
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=400&fit=crop",
+    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-overview-gaia.ashx?h=710&w=1000",
     link: "https://associated-weavers.co.uk/",
   },
   {
@@ -66,7 +66,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "Bleach cleanable, incredibly resilient, superbly wear-resistant and yet pleasantly soft. Vivendi® is built to bounce back and made to last.",
     features: ["Bleach Cleanable", "Wear Resistant", "Pleasantly Soft"],
-    image: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&h=400&fit=crop",
+    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-overview-vivendi.ashx?h=710&w=1000",
     link: "https://associated-weavers.co.uk/",
   },
   // Cormar
@@ -75,7 +75,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Cormar Carpets",
     description: "Stain resistant, pet and family-friendly carpets perfect for all around the home. All Easy Clean ranges come with a 10 Year Stain and Wear Guarantee for complete peace of mind.",
     features: ["Stain Resistant", "Pet Friendly", "10 Year Guarantee"],
-    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop",
+    image: "https://www.cormarcarpets.co.uk/media/rtmjqlrd/apollo_a_hero_delilah_104_206-alex.png?height=400&width=600&quality=80&mode=Crop",
     link: "https://www.cormarcarpets.co.uk/",
   },
   {
@@ -83,7 +83,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Cormar Carpets",
     description: "Cosy, luxurious and soft to the touch. Made from 100% Luxelle Polypropylene, these super-soft carpets help you create the ultimate haven with a 10-year stain warranty.",
     features: ["100% Luxelle", "Luxuriously Soft", "10 Year Warranty"],
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=400&fit=crop",
+    image: "https://www.cormarcarpets.co.uk/media/nusmmguz/3169-695-compressed.jpg?height=400&width=600&quality=80&mode=Crop",
     link: "https://www.cormarcarpets.co.uk/",
   },
   {
@@ -91,7 +91,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Cormar Carpets",
     description: "Natural, versatile and ideal for all around the home. Available in heather, flecked or plain shades and in a variety of pile weights to suit your needs.",
     features: ["Natural Wool", "Versatile", "Multiple Weights"],
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop",
+    image: "https://www.cormarcarpets.co.uk/media/matdpnqf/cormar-hamstead-fossil_a4-60.jpg?height=400&width=600&quality=80&mode=Crop",
     link: "https://www.cormarcarpets.co.uk/",
   },
   {
@@ -99,7 +99,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Cormar Carpets",
     description: "Naturally textured and resilient with a quality feel. The Wool Loop collection includes a variety of individual styles from striped to natural seagrass looks.",
     features: ["Textured", "Resilient", "Quality Feel"],
-    image: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&h=400&fit=crop",
+    image: "https://www.cormarcarpets.co.uk/media/jbqayv2w/malabar_cormar_influencer_shoot5797_rt_lr.jpg?height=400&width=600&quality=80&mode=Crop",
     link: "https://www.cormarcarpets.co.uk/",
   },
   // Westex
@@ -108,24 +108,24 @@ const carpetRanges: CarpetRange[] = [
     brand: "Westex Flooring",
     description: "For an unrivalled luxury finish, the Silken Velvet collection guarantees irresistible comfort and a lustrous appearance that transforms any room.",
     features: ["Luxury Finish", "Lustrous", "Irresistible Comfort"],
-    image: "https://images.unsplash.com/photo-1616137466211-f939a420be84?w=600&h=400&fit=crop",
-    link: "https://www.westexflooring.com/",
+    image: "https://www.westexflooring.com/wp-content/uploads/2022/02/westex-silken-velvet-680-340x460.jpg",
+    link: "https://www.westexflooring.com/carpets/collection/silken-velvet/",
   },
   {
     name: "Ultima Twist",
     brand: "Westex Flooring",
     description: "The ideal choice for residential or contract carpeted areas, offering a superb combination of performance and style with exceptional durability.",
     features: ["High Performance", "Durable", "Versatile"],
-    image: "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=600&h=400&fit=crop",
-    link: "https://www.westexflooring.com/",
+    image: "https://www.westexflooring.com/wp-content/uploads/2022/02/westex-ultima-twist-680-340x460.jpg",
+    link: "https://www.westexflooring.com/carpets/collection/ultima-twist/",
   },
   {
     name: "Westend Velvet",
     brand: "Westex Flooring",
     description: "For richness, comfort and style, the Westend Velvet collection is hard to beat — tasteful good looks and a sumptuous feel that elevates any interior.",
     features: ["Rich & Comfortable", "Tasteful Design", "Sumptuous Feel"],
-    image: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=600&h=400&fit=crop",
-    link: "https://www.westexflooring.com/",
+    image: "https://www.westexflooring.com/wp-content/uploads/2022/02/westex-westend-velvet-680-340x460.jpg",
+    link: "https://www.westexflooring.com/carpets/collection/westend-velvet/",
   },
 ];
 
