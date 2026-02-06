@@ -34,7 +34,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "The ultimate reference in the UK for comfy, invincible dense pile carpet. Invictus® delivers stunningly rich textures with superior stain resistance for busy family homes.",
     features: ["Invincible Comfort", "Rich Textures", "Stain Resistant"],
-    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-visuals-invictus.ashx?h=1080&w=1080",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/DWCXcoaLdaEUGOdW.jpg",
     link: "https://associated-weavers.co.uk/",
   },
   {
@@ -42,7 +42,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "Soft, luxurious and durable carpet made from recycled waste material and PET bottles. Sedna® combines sustainability with premium quality for eco-conscious homeowners.",
     features: ["Soft & Luxurious", "Sustainable", "Recycled Materials"],
-    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-visuals-sedna.ashx?h=1080&w=1080",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/mMWsxmrJVYMYrQJn.jpg",
     link: "https://associated-weavers.co.uk/",
   },
   {
@@ -50,7 +50,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "The UK's first and favourite brand for super soft carpet. iSENSE® is ultra resilient and extremely durable — the luxury choice for discerning homeowners.",
     features: ["Super Soft", "Ultra Resilient", "Extremely Durable"],
-    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-visuals-isense.ashx?h=1080&w=1080",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/FqfNbDLJgZsCdfYU.webp",
     link: "https://associated-weavers.co.uk/",
   },
   {
@@ -58,7 +58,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "The ultimate contemporary choice — a global decorating solution that's soft, colourfast and comfortable with brilliant colours and a silky touch.",
     features: ["Brilliant Colours", "Silky Touch", "Easy Maintenance"],
-    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-visuals-gaia.ashx?h=1080&w=1080",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/YioCByJpDeogyZaZ.jpg",
     link: "https://associated-weavers.co.uk/",
   },
   {
@@ -66,7 +66,7 @@ const carpetRanges: CarpetRange[] = [
     brand: "Associated Weavers",
     description: "Bleach cleanable, incredibly resilient, superbly wear-resistant and yet pleasantly soft. Vivendi® is built to bounce back and made to last.",
     features: ["Bleach Cleanable", "Wear Resistant", "Pleasantly Soft"],
-    image: "https://associated-weavers.co.uk/-/media/project/associatedweavers/brands/brands-overview/brands-visuals-vivendi.ashx?h=1080&w=1080",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/RHSOllhnRkpVrPcl.jpg",
     link: "https://associated-weavers.co.uk/",
   },
   // Cormar
