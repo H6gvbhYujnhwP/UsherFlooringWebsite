@@ -19,7 +19,7 @@ export default function Footer() {
               <img
                 src={LOGO_URL}
                 alt="Usher Flooring"
-                className="h-14 w-auto brightness-0 invert mb-4"
+                className="h-14 w-auto mb-4"
               />
             </Link>
             <p className="text-warm-cream/60 text-sm leading-relaxed mt-4">

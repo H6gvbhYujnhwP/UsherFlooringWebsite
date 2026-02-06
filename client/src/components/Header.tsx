@@ -64,7 +64,7 @@ export default function Header() {
           <img
             src={LOGO_URL}
             alt="Usher Flooring - The Smart Choice"
-            className="h-12 md:h-14 w-auto brightness-0 invert"
+            className="h-12 md:h-14 w-auto drop-shadow-[0_0_8px_rgba(0,0,0,0.3)]"
           />
         </Link>
 
