@@ -14,7 +14,7 @@ const ABOUT_IMG = "https://private-us-east-1.manuscdn.com/sessionFile/spYHdhwg5a
 const contactInfo = [
   { icon: Phone, title: "Phone", value: "Contact us for details", href: "tel:+441234567890" },
   { icon: Mail, title: "Email", value: "info@usherflooring.com", href: "mailto:info@usherflooring.com" },
-  { icon: MapPin, title: "Area", value: "Surrey & Surrounding Areas", href: undefined },
+  { icon: MapPin, title: "Area", value: "London, Essex & Surrounding Areas", href: undefined },
   { icon: Clock, title: "Availability", value: "Showroom visits by appointment", href: undefined },
 ];
 

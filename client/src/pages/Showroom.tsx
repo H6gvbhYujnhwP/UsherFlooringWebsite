@@ -252,7 +252,7 @@ export default function Showroom() {
                 {[
                   { icon: Calendar, title: "By Appointment", desc: "Please arrange your visit in advance to ensure someone is available to help you." },
                   { icon: Phone, title: "Book Your Visit", desc: "Contact us via phone or our contact form to arrange a convenient time." },
-                  { icon: MapPin, title: "Location", desc: "Based in Surrey, serving Surrey and surrounding areas." },
+                  { icon: MapPin, title: "Location", desc: "Based in London and Essex, serving London, Essex and surrounding areas." },
                   { icon: Clock, title: "Flexible Times", desc: "We'll work around your schedule to find a time that suits you." },
                 ].map((item, i) => (
                   <AnimatedSection key={item.title} delay={0.2 + i * 0.1}>

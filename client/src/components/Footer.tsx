@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-warm-cream/60 text-sm leading-relaxed mt-4">
-              Supplying and fitting quality flooring across Surrey and surrounding areas.
+              Supplying and fitting quality flooring across London, Essex and surrounding areas.
               Carpets, laminate, vinyl and LVT from leading manufacturers.
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-warm-cream/60 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-gold/60" />
-                <span>Surrey &amp; Surrounding Areas</span>
+                <span>London, Essex &amp; Surrounding Areas</span>
               </li>
             </ul>
           </div>

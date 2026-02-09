@@ -45,7 +45,7 @@ export default function About() {
               <p className="mt-6 text-charcoal/70 text-lg leading-relaxed">
                 Whether you are looking for luxurious carpets with beautiful designs or sleek modern
                 flooring, we deliver a great range of flooring solutions and product ranges for your
-                budget along with expert fitting throughout Surrey and surrounding areas.
+                budget along with expert fitting throughout London, Essex and surrounding areas.
               </p>
               <p className="mt-6 text-charcoal/70 text-lg leading-relaxed">
                 We work with trusted manufacturers including Associated Weavers, Cormar, Westex and

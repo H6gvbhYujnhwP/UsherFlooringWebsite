@@ -61,7 +61,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-gold text-sm md:text-base uppercase tracking-[0.3em] mb-6 font-medium"
           >
-            Supply &amp; Fit Flooring — Surrey &amp; Surrounding Areas
+            Supply & Fit Flooring — London, Essex & Surrounding Areas
           </motion.p>
 
           <motion.h1

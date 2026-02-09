@@ -49,7 +49,7 @@ export default function Laminate() {
                 tone, or something more contemporary, we have options to suit every taste.
               </p>
               <p className="mt-6 text-charcoal/70 text-lg leading-relaxed">
-                We offer a free measuring service in Surrey and surrounding areas and can provide you
+                We offer a free measuring service in London, Essex and surrounding areas and can provide you
                 with a no-obligation quote for supplying and fitting your new laminate flooring.
               </p>
             </AnimatedSection>
