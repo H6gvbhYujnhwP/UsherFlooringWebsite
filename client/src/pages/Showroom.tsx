@@ -53,6 +53,11 @@ const SHOWROOM_PHOTOS = [
     span: "col-span-1 row-span-2",
   },
   {
+    src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/LidQIgjirYmGRkSY.jpeg",
+    alt: "Invictus Cassius & Darius carpet samples display with premium textures",
+    span: "col-span-1 row-span-1",
+  },
+  {
     src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/viPhXgWTCJHdjhFp.jpeg",
     alt: "Panoramic showroom view with Invictus and Lifestyle Floors displays",
     span: "col-span-2 row-span-1",
