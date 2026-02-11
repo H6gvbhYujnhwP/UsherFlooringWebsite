@@ -4,7 +4,7 @@
  * Form fields: First Name, Last Name, Email, Phone, Message
  */
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Smartphone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { toast } from "sonner";
 import PageHero from "@/components/PageHero";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -12,7 +12,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 const ABOUT_IMG = "https://private-us-east-1.manuscdn.com/sessionFile/spYHdhwg5aGvgCOjWfy6Ue/sandbox/YBDl5gKjn9NnNz02VNdZX1-img-5_1770383306000_na1fn_YWJvdXQtc2VjdGlvbg.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvc3BZSGRod2c1YUd2Z0NPaldmeTZVZS9zYW5kYm94L1lCRGw1Z0tqbjlObk56MDJWTmRaWDEtaW1nLTVfMTc3MDM4MzMwNjAwMF9uYTFmbl9ZV0p2ZFhRdGMyVmpkR2x2YmcuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=edWhnBYc3aZwT6SqGdfspbcljcC~vBDHTcbCysifX3qs1ia51CjkA20L65GhTWSv4~3uqtRniW8LBqGy57h4A-V7rcq~bT6tJDKBZHY7u9MnC1qvtqhvFYkS1-o0jkqiccxs3uS1Q6xkqyJzs34pHn~8JSt7NFCRCCKOXnLLb~vu5J8Hs8xsGnfdntPY1eLErvz6yR9ENMUpogIfvIBrc605N3Cvafiihdduurg3NkVi4Q2g8Apzot~wULJzofoQhuMqCrgPV2CYN3IC1z9wfBRHg2uBzEPKFp2jqCHjx6NGTBeLJjSaDU4YEFckZz~YnytVtOxAyjZr6uvZ-ewblg__";
 
 const contactInfo = [
-  { icon: Phone, title: "Phone", value: "Contact us for details", href: "tel:+441234567890" },
+  { icon: Phone, title: "Telephone", value: "01277 711 629", href: "tel:01277711629" },
+  { icon: Smartphone, title: "Mobile", value: "07985 200 403", href: "tel:07985200403" },
   { icon: Mail, title: "Email", value: "info@usherflooring.com", href: "mailto:info@usherflooring.com" },
   { icon: MapPin, title: "Area", value: "London, Essex & Surrounding Areas", href: undefined },
   { icon: Clock, title: "Availability", value: "Showroom visits by appointment", href: undefined },

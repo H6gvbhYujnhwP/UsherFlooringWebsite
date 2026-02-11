@@ -3,10 +3,11 @@
  * Header: Persistent sticky nav, dark charcoal background, gold accent on hover/active
  * Logo left, nav items right, mobile hamburger menu
  * Playfair Display for logo text, DM Sans for nav items
+ * Contact numbers displayed in top bar on all pages
  */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Smartphone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/NiaNicvmPIItiOSR.png";
@@ -45,26 +46,33 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      {/* Top bar with phone number */}
-      <div className={`transition-all duration-500 overflow-hidden ${scrolled ? "max-h-0 opacity-0" : "max-h-10 opacity-100"}`}>
-        <div className="container flex justify-end py-1.5">
+      {/* Top bar with phone numbers */}
+      <div className={`transition-all duration-500 overflow-hidden ${scrolled ? "max-h-0 opacity-0" : "max-h-12 opacity-100"}`}>
+        <div className="container flex justify-end items-center gap-6 py-2">
           <a
-            href="tel:+441234567890"
+            href="tel:01277711629"
             className="flex items-center gap-1.5 text-xs tracking-wider text-warm-cream/70 hover:text-gold transition-colors"
           >
             <Phone className="w-3 h-3" />
-            Call Us Today
+            <span className="hidden sm:inline">Tel:</span> 01277 711 629
+          </a>
+          <a
+            href="tel:07985200403"
+            className="flex items-center gap-1.5 text-xs tracking-wider text-warm-cream/70 hover:text-gold transition-colors"
+          >
+            <Smartphone className="w-3 h-3" />
+            <span className="hidden sm:inline">Mob:</span> 07985 200 403
           </a>
         </div>
       </div>
 
-      <nav className="container flex items-center justify-between py-3">
-        {/* Logo */}
+      <nav className="container flex items-center justify-between py-4">
+        {/* Logo - 25% larger */}
         <Link href="/" className="relative z-10 shrink-0">
           <img
             src={LOGO_URL}
             alt="Usher Flooring - The Smart Choice"
-            className="h-12 md:h-14 w-auto drop-shadow-[0_0_8px_rgba(0,0,0,0.3)]"
+            className="h-16 md:h-[4.5rem] w-auto drop-shadow-[0_0_8px_rgba(0,0,0,0.3)]"
           />
         </Link>
 
@@ -132,6 +140,23 @@ export default function Header() {
                   </Link>
                 </motion.div>
               ))}
+              {/* Mobile phone numbers */}
+              <div className="mt-4 pt-4 border-t border-gold/20 flex flex-col gap-3 px-4">
+                <a
+                  href="tel:01277711629"
+                  className="flex items-center gap-2 text-sm text-warm-cream/70 hover:text-gold transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  Tel: 01277 711 629
+                </a>
+                <a
+                  href="tel:07985200403"
+                  className="flex items-center gap-2 text-sm text-warm-cream/70 hover:text-gold transition-colors"
+                >
+                  <Smartphone className="w-4 h-4" />
+                  Mob: 07985 200 403
+                </a>
+              </div>
             </div>
           </motion.div>
         )}

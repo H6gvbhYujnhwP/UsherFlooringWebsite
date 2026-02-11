@@ -4,7 +4,7 @@
  * Logo, nav links, contact info, supplier mentions
  */
 import { Link } from "wouter";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Smartphone, Mail, MapPin } from "lucide-react";
 
 const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/NiaNicvmPIItiOSR.png";
 
@@ -94,11 +94,20 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+441234567890"
+                  href="tel:01277711629"
                   className="flex items-start gap-3 text-warm-cream/60 hover:text-gold text-sm transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4 mt-0.5 shrink-0 text-gold/60" />
-                  <span>Contact us for details</span>
+                  <span>Tel: 01277 711 629</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:07985200403"
+                  className="flex items-start gap-3 text-warm-cream/60 hover:text-gold text-sm transition-colors duration-300"
+                >
+                  <Smartphone className="w-4 h-4 mt-0.5 shrink-0 text-gold/60" />
+                  <span>Mob: 07985 200 403</span>
                 </a>
               </li>
               <li>
