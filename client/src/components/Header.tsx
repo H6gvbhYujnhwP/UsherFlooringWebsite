@@ -4,6 +4,7 @@
  * Logo left, nav items right, mobile hamburger menu
  * Playfair Display for logo text, DM Sans for nav items
  * Contact numbers displayed in top bar on all pages
+ * Mobile: Smaller logo to avoid overlapping hero tagline
  */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
@@ -48,17 +49,17 @@ export default function Header() {
     >
       {/* Top bar with phone numbers */}
       <div className={`transition-all duration-500 overflow-hidden ${scrolled ? "max-h-0 opacity-0" : "max-h-12 opacity-100"}`}>
-        <div className="container flex justify-end items-center gap-6 py-2">
+        <div className="container flex justify-end items-center gap-4 sm:gap-6 py-1.5 sm:py-2">
           <a
             href="tel:01277711629"
-            className="flex items-center gap-1.5 text-xs tracking-wider text-warm-cream/70 hover:text-gold transition-colors"
+            className="flex items-center gap-1.5 text-[11px] sm:text-xs tracking-wider text-warm-cream/70 hover:text-gold transition-colors"
           >
             <Phone className="w-3 h-3" />
             <span className="hidden sm:inline">Tel:</span> 01277 711 629
           </a>
           <a
             href="tel:07985200403"
-            className="flex items-center gap-1.5 text-xs tracking-wider text-warm-cream/70 hover:text-gold transition-colors"
+            className="flex items-center gap-1.5 text-[11px] sm:text-xs tracking-wider text-warm-cream/70 hover:text-gold transition-colors"
           >
             <Smartphone className="w-3 h-3" />
             <span className="hidden sm:inline">Mob:</span> 07985 200 403
@@ -66,13 +67,13 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="container flex items-center justify-between py-4">
-        {/* Logo - 25% larger */}
+      <nav className="container flex items-center justify-between py-2 sm:py-4">
+        {/* Logo - smaller on mobile, 25% larger on desktop */}
         <Link href="/" className="relative z-10 shrink-0">
           <img
             src={LOGO_URL}
             alt="Usher Flooring - The Smart Choice"
-            className="h-16 md:h-[4.5rem] w-auto drop-shadow-[0_0_8px_rgba(0,0,0,0.3)]"
+            className="h-10 sm:h-14 md:h-16 lg:h-[4.5rem] w-auto drop-shadow-[0_0_8px_rgba(0,0,0,0.3)]"
           />
         </Link>
 
