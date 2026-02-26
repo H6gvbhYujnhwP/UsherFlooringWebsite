@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Redirect, Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -21,6 +21,12 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
+      {/* 301-style redirects for old website URLs (Romford era) */}
+      <Route path="/services">{() => <Redirect to="/carpets" />}</Route>
+      <Route path="/gallery">{() => <Redirect to="/showroom" />}</Route>
+      <Route path="/about-us">{() => <Redirect to="/about" />}</Route>
+      <Route path="/home">{() => <Redirect to="/" />}</Route>
+      <Route path="/flooring">{() => <Redirect to="/" />}</Route>
       <Route path="/carpets" component={Carpets} />
       <Route path="/laminate" component={Laminate} />
       <Route path="/lvt" component={LVT} />

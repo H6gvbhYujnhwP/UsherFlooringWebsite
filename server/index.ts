@@ -10,6 +10,32 @@ async function startServer() {
   const app = express();
   const server = createServer(app);
 
+  // 301 Redirects for old website pages (Romford-era URLs)
+  // These tell Google the old pages have permanently moved to the new ones
+  const redirects: Record<string, string> = {
+    "/services": "/carpets",
+    "/gallery": "/showroom",
+    "/about-us": "/about",
+    // Common old URL patterns that might exist
+    "/carpets-romford": "/carpets",
+    "/services-carpets-romford": "/carpets",
+    "/contact-romford": "/contact",
+    "/gallery-romford": "/showroom",
+    "/about-romford": "/about",
+    "/flooring": "/",
+    "/flooring-romford": "/",
+    "/home": "/",
+  };
+
+  // Apply 301 redirects before static file serving
+  app.use((req, res, next) => {
+    const redirectTo = redirects[req.path.toLowerCase()];
+    if (redirectTo) {
+      return res.redirect(301, redirectTo);
+    }
+    next();
+  });
+
   // Serve static files from dist/public in production
   const staticPath =
     process.env.NODE_ENV === "production"
