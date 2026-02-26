@@ -1,18 +1,30 @@
 /*
  * Design: "Gentleman's Club" British Heritage Luxury
  * Footer: Dark charcoal, gold accents, organized columns
- * Logo, nav links, contact info, supplier mentions
+ * Logo, nav links, areas, contact info, supplier mentions
  */
 import { Link } from "wouter";
 import { Phone, Smartphone, Mail, MapPin } from "lucide-react";
 
 const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/NiaNicvmPIItiOSR.png";
 
+const areaCovered = [
+  { label: "Wickford", href: "/flooring-wickford" },
+  { label: "Basildon", href: "/flooring-basildon" },
+  { label: "Rayleigh", href: "/flooring-rayleigh" },
+  { label: "Southend", href: "/flooring-southend" },
+  { label: "Benfleet", href: "/flooring-benfleet" },
+  { label: "Billericay", href: "/flooring-billericay" },
+  { label: "Brentwood", href: "/flooring-brentwood" },
+  { label: "Chelmsford", href: "/flooring-chelmsford" },
+  { label: "Romford", href: "/flooring-romford" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-charcoal border-t border-gold/20">
       <div className="container py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Logo & Tagline */}
           <div className="lg:col-span-1">
             <Link href="/">
@@ -51,6 +63,26 @@ export default function Footer() {
                     className="text-warm-cream/60 hover:text-gold text-sm transition-colors duration-300"
                   >
                     {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Areas We Cover */}
+          <div>
+            <h4 className="font-serif text-sm uppercase tracking-[0.2em] text-gold mb-6">
+              Areas We Cover
+            </h4>
+            <div className="gold-divider mb-6" />
+            <ul className="space-y-3">
+              {areaCovered.map((area) => (
+                <li key={area.href}>
+                  <Link
+                    href={area.href}
+                    className="text-warm-cream/60 hover:text-gold text-sm transition-colors duration-300"
+                  >
+                    {area.label}
                   </Link>
                 </li>
               ))}

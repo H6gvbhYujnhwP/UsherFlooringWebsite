@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import TownLanding, { TOWNS } from "./pages/TownLanding";
 
 function Router() {
   return (
@@ -33,6 +34,12 @@ function Router() {
       <Route path="/vinyl" component={Vinyl} />
       <Route path="/showroom" component={Showroom} />
       <Route path="/contact" component={Contact} />
+      {/* Town-specific landing pages for local SEO */}
+      {TOWNS.map((town) => (
+        <Route key={town.slug} path={`/${town.slug}`}>
+          {() => <TownLanding town={town} />}
+        </Route>
+      ))}
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
