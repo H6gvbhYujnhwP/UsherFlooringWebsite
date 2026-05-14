@@ -1,0 +1,15 @@
+# 301 Redirects for old website pages (Romford-era URLs)
+/services /carpets 301
+/gallery /showroom 301
+/about-us /about 301
+/carpets-romford /carpets 301
+/services-carpets-romford /carpets 301
+/contact-romford /contact 301
+/gallery-romford /showroom 301
+/about-romford /about 301
+/flooring / 301
+/flooring-romford / 301
+/home / 301
+
+# SPA catch-all: serve index.html for all routes (client-side routing)
+/* /index.html 200
